@@ -7,7 +7,10 @@
 }
 
 body {
-  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   background-color: var(--color-principal);
   padding: 0;
   margin: 0;
@@ -56,20 +59,18 @@ body h2 {
   padding: 0;
 }
 header {
-  width: 100%;
-  background-image: url(./img-editables/desktop2.png);
-  background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  height: 100vh;
+  background-image: url(../images/fondo-principal.webp);
+  background-attachment: unset;
+  text-align: center;
+  max-width: 500px;
 }
 .novios {
-  width: 100%;
+  background-size: cover;
+  background-image: url(../images/fondo-principal.webp);
+  background-attachment: unset;
+  text-align: center;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .novios img {
   width: 100%;
@@ -341,7 +342,7 @@ footer img {
   width: 100px;
 }
 .rsvp {
-  height: 40vh;
+  height: 50vh;
   color: var(--color-principal);
   background-image: url(../images/4.png);
   background-size: cover;
@@ -659,4 +660,8 @@ footer img {
 .contenedor-cinco h5 {
   color: var(--color-secundario);
   margin: 0;
+}
+
+.contenedor-regalos {
+  max-width: 500px !important;
 }
